@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STREAMVIBE | Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="./js/main.js" type="module" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header" data-js-header>
+            <div class="header__inner container">
+                <a href="#" class="header__logo logo" title="Home" aria-label="Home">
+                    <img class="logo__img" src="images/Logo.svg" alt="" width="199" height="60">
+                </a>
+                <div class="header__menu menu" data-js-header-overlay>
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="./index.html" class="menu__link is-active">Home</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="./movies&shows.html" class="menu__link">Movies & Shows</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="./support.html" class="menu__link">Support</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="./subscriptions.html" class="menu__link">Subscriptions</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__actions actions-header hidden-mobile">
+                    <a href="#" class="actions-header__search" aria-label="Search" title="Search">
+                        <img src="icons/search.svg" alt="" width="34" height="34">
+                    </a>
+                    <a href="#" class="actions-header__favorite" aria-label="Favorite" title="Favorite">
+                        <img src="icons/bell.svg" alt="" width="34" height="34">
+                    </a>
+                </div>
+                <button
+                    class="header__menu-burger burger-menu visible-mobile"
+                    type="button"
+                    aria-label="Open menu"
+                    title="Open menu"
+                    data-js-header-burger-button
+                >
+                    <span class="burger-menu__line"></span>
+                </button>
+            </div>
+        </header>
+        <main class="main">
+            <section class="hero">
+                <div class="hero__content">
+                    <h1 class="hero__title">The Best Streaming Experience</h1>
+                    <div class="hero__text">
+                        <p id="hero-text">
+                            StreamVibe is the best streaming experience for watching your favorite movies and shows on demand, anytime, anywhere. With StreamVibe, you can enjoy a wide variety of content, including the latest blockbusters, classic movies, popular TV shows, and more. You can also create your own watchlists, so you can easily find the content you want to watch.
+                        </p>
+                    </div>
+                    <a href="#" class="hero__link button">
+                        Start Watching Now
+                    </a>
+                </div>
+                <div class="hero__bg">
+                    <img src="./images/hero/bg.png" alt="">
+                </div>
+            </section>
+            <section class="section" aria-labelledby="categories-title">
+                <header class="section__header">
+                    <div class="section__header-inner container">
+                        <div class="section__header-info">
+                            <h3 class="section__title" id="categories-title">
+                                Explore our wide variety of categories
+                            </h3>
+                            <p class="section__subtitle">
+                                Whether you're looking for a comedy to make you laugh, a drama to make you think, or a documentary to learn something new
+                            </p>
+                        </div>
+                        <div class="section__header-arrows slider-arrows hidden-mobile">
+                            <div class="slider__arrow slider__arrow--left slider-categories__arrow--left">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.75 14L5.25 14M5.25 14L13.125 21.875M5.25 14L13.125 6.125" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="slider-pagination slider-pagination-categories"></div>
+                            <div class="slider__arrow slider__arrow--right slider-categories__arrow--right">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.75 14L5.25 14M5.25 14L13.125 21.875M5.25 14L13.125 6.125" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div class="section__body container">
+                    <div class="swiper slider-categories">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide">
+                                <div class="slide__item">
+                                    <div class="slide__images">
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-1.jpg" alt="">
+                                        </div>
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-2.jpg" alt="">
+                                        </div>
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-3.jpg" alt="">
+                                        </div>
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-4.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="slide__info">
+                                        <div class="slide__title">
+                                            <p>Action</p>
+                                        </div>
+                                        <a href="#" class="slide__link">
+                                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22.75 14L5.25 14M5.25 14L13.125 21.875M5.25 14L13.125 6.125" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide">
+                                <div class="slide__item">
+                                    <div class="slide__images">
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-5.jpg" alt="">
+                                        </div>
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-6.jpg" alt="">
+                                        </div>
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-7.jpg" alt="">
+                                        </div>
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-8.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="slide__info">
+                                        <div class="slide__title">
+                                            <p>Adventure</p>
+                                        </div>
+                                        <a href="#" class="slide__link">
+                                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22.75 14L5.25 14M5.25 14L13.125 21.875M5.25 14L13.125 6.125" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide">
+                                <div class="slide__item">
+                                    <div class="slide__images">
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-9.jpg" alt="">
+                                        </div>
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-10.jpg" alt="">
+                                        </div>
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-11.jpg" alt="">
+                                        </div>
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-12.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="slide__info">
+                                        <div class="slide__title">
+                                            <p>Comedy</p>
+                                        </div>
+                                        <a href="#" class="slide__link">
+                                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22.75 14L5.25 14M5.25 14L13.125 21.875M5.25 14L13.125 6.125" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide">
+                                <div class="slide__item">
+                                    <div class="slide__images">
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-13.jpg" alt="">
+                                        </div>
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-14.jpg" alt="">
+                                        </div>
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-15.jpg" alt="">
+                                        </div>
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-16.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="slide__info">
+                                        <div class="slide__title">
+                                            <p>Drama</p>
+                                        </div>
+                                        <a href="#" class="slide__link">
+                                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22.75 14L5.25 14M5.25 14L13.125 21.875M5.25 14L13.125 6.125" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide">
+                                <div class="slide__item">
+                                    <div class="slide__images">
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-17.jpg" alt="">
+                                        </div>
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-18.jpg" alt="">
+                                        </div>
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-19.jpg" alt="">
+                                        </div>
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-20.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="slide__info">
+                                        <div class="slide__title">
+                                            <p>Horror</p>
+                                        </div>
+                                        <a href="#" class="slide__link">
+                                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22.75 14L5.25 14M5.25 14L13.125 21.875M5.25 14L13.125 6.125" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide">
+                                <div class="slide__item">
+                                    <div class="slide__images">
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-1.jpg" alt="">
+                                        </div>
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-2.jpg" alt="">
+                                        </div>
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-3.jpg" alt="">
+                                        </div>
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-4.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="slide__info">
+                                        <div class="slide__title">
+                                            <p>Action</p>
+                                        </div>
+                                        <a href="#" class="slide__link">
+                                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22.75 14L5.25 14M5.25 14L13.125 21.875M5.25 14L13.125 6.125" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide">
+                                <div class="slide__item">
+                                    <div class="slide__images">
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-1.jpg" alt="">
+                                        </div>
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-2.jpg" alt="">
+                                        </div>
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-3.jpg" alt="">
+                                        </div>
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-4.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="slide__info">
+                                        <div class="slide__title">
+                                            <p>Action</p>
+                                        </div>
+                                        <a href="#" class="slide__link">
+                                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22.75 14L5.25 14M5.25 14L13.125 21.875M5.25 14L13.125 6.125" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide">
+                                <div class="slide__item">
+                                    <div class="slide__images">
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-1.jpg" alt="">
+                                        </div>
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-2.jpg" alt="">
+                                        </div>
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-3.jpg" alt="">
+                                        </div>
+                                        <div class="slide__image">
+                                            <img src="./images/slider/Image-4.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="slide__info">
+                                        <div class="slide__title">
+                                            <p>Action</p>
+                                        </div>
+                                        <a href="#" class="slide__link">
+                                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22.75 14L5.25 14M5.25 14L13.125 21.875M5.25 14L13.125 6.125" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-scrollbar swiper-scrollbar-categories visible-mobile"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="section" aria-labelledby="devices-title">
+                <header class="section__header">
+                    <div class="section__header-inner container">
+                        <div class="section__header-info">
+                            <h3 class="section__title" id="devices-title">
+                                We Provide you streaming experience across various devices.
+                            </h3>
+                            <p class="section__subtitle">
+                                With StreamVibe, you can enjoy your favorite movies and TV shows anytime, anywhere. Our platform is designed to be compatible with a wide range of devices, ensuring that you never miss a moment of entertainment.
+                            </p>
+                        </div>
+                    </div>
+                </header>
+                <div class="section__body">
+                    <ul class="devices-grid container">
+                        <li class="devices-grid__item">
+                            <div class="device-card">
+                                <div class="device-card__head head-device">
+                                    <div class="head-device__image">
+                                        <img src="./icons/smartphone.svg" alt="" width="40" height="40">
+                                    </div>
+                                    <h4 class="head-device__title">Smartphones</h4>
+                                </div> 
+                                <div class="device-card__desc">
+                                    <p>
+                                        StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="devices-grid__item">
+                            <div class="device-card">
+                                <div class="device-card__head head-device">
+                                    <div class="head-device__image">
+                                        <img src="./icons/tablet.svg" alt="" width="40" height="40">
+                                    </div>
+                                    <h4 class="head-device__title">Tablet</h4>
+                                </div> 
+                                <div class="device-card__desc">
+                                    <p>
+                                        StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="devices-grid__item">
+                            <div class="device-card">
+                                <div class="device-card__head head-device">
+                                    <div class="head-device__image">
+                                        <img src="./icons/tv.svg" alt="" width="40" height="40">
+                                    </div>
+                                    <h4 class="head-device__title">Smart TV</h4>
+                                </div> 
+                                <div class="device-card__desc">
+                                    <p>
+                                        StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="devices-grid__item">
+                            <div class="device-card">
+                                <div class="device-card__head head-device">
+                                    <div class="head-device__image">
+                                        <img src="./icons/laptop.svg" alt="" width="40" height="40">
+                                    </div>
+                                    <h4 class="head-device__title">Laptops</h4>
+                                </div> 
+                                <div class="device-card__desc">
+                                    <p>
+                                        StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="devices-grid__item">
+                            <div class="device-card">
+                                <div class="device-card__head head-device">
+                                    <div class="head-device__image">
+                                        <img src="./icons/console.svg" alt="" width="40" height="40">
+                                    </div>
+                                    <h4 class="head-device__title">Gaming Consoles</h4>
+                                </div> 
+                                <div class="device-card__desc">
+                                    <p>
+                                        StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="devices-grid__item">
+                            <div class="device-card">
+                                <div class="device-card__head head-device">
+                                    <div class="head-device__image">
+                                        <img src="./icons/headset.svg" alt="" width="40" height="40">
+                                    </div>
+                                    <h4 class="head-device__title">VR Headsets </h4>
+                                </div> 
+                                <div class="device-card__desc">
+                                    <p>
+                                        StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section" aria-labelledby="faq-title">
+                <header class="section__header container">
+                    <div class="section__header-inner">
+                        <div class="section__header-info">
+                            <h3 class="section__title" id="faq-title">
+                                Frequently Asked Questions
+                            </h3>
+                            <p class="section__subtitle">
+                                Got questions? We've got answers! Check out our FAQ section to find answers to the most common questions about StreamVibe.
+                            </p>
+                        </div>
+                        <a href="#" class="section__header-btn button">Ask a Question</a>
+                    </div>
+                </header>
+                <div class="section__body container">
+                    <div class="accordion-group">
+                        <div class="accordion">
+                            <details class="accordion__details" name="faq" open>
+                                <summary class="accordion__summary">
+                                    <h5 class="accordion__title">
+                                        <span role="term" aria-details="faq-1">
+                                            What is StreamVibe?
+                                        </span>
+                                    </h5>
+                                </summary>
+                            </details>
+                            <div class="accordion__content" id="faq-1" role="definition">
+                                <div class="accordion__content-inner">
+                                    <div class="accordion__content-body">
+                                        <p>
+                                            StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <details class="accordion__details" name="faq">
+                                <summary class="accordion__summary">
+                                    <h5 class="accordion__title">
+                                        <span role="term" aria-details="faq-2">
+                                            How can I listen to your podcasts?
+                                        </span>
+                                    </h5>
+                                </summary>
+                            </details>
+                            <div class="accordion__content" id="faq-2" role="definition">
+                                <div class="accordion__content-inner">
+                                    <div class="accordion__content-body">
+                                        <p>
+                                            AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables them to perform tasks like problem-solving, learning, and decision-making.AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables them to perform tasks like problem-solving, learning, and decision-making.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <details class="accordion__details" name="faq">
+                                <summary class="accordion__summary">
+                                    <h5 class="accordion__title">
+                                        <span role="term" aria-details="faq-3">
+                                            Are your podcasts free to listen to?
+                                        </span>
+                                    </h5>
+                                </summary>
+                            </details>
+                            <div class="accordion__content" id="faq-3" role="definition">
+                                <div class="accordion__content-inner">
+                                    <div class="accordion__content-body">
+                                        <p>
+                                            AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables them to perform tasks like problem-solving, learning, and decision-making.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <details class="accordion__details" name="faq">
+                                <summary class="accordion__summary">
+                                    <h5 class="accordion__title">
+                                        <span role="term" aria-details="faq-4">
+                                            Can I download episodes to listen offline?
+                                        </span>
+                                    </h5>
+                                </summary>
+                            </details>
+                            <div class="accordion__content" id="faq-4" role="definition">
+                                <div class="accordion__content-inner">
+                                    <div class="accordion__content-body">
+                                        <p>
+                                            AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables them to perform tasks like problem-solving, learning, and decision-making.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <details class="accordion__details" name="faq">
+                                <summary class="accordion__summary">
+                                    <h5 class="accordion__title">
+                                        <span role="term" aria-details="faq-5">
+                                            How often do you release new episodes?
+                                        </span>
+                                    </h5>
+                                </summary>
+                            </details>
+                            <div class="accordion__content" id="faq-5" role="definition">
+                                <div class="accordion__content-inner">
+                                    <div class="accordion__content-body">
+                                        <p>
+                                            AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables them to perform tasks like problem-solving, learning, and decision-making.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <details class="accordion__details" name="faq">
+                                <summary class="accordion__summary">
+                                    <h5 class="accordion__title">
+                                        <span role="term" aria-details="faq-6">
+                                            Are your podcasts free to listen to?
+                                        </span>
+                                    </h5>
+                                </summary>
+                            </details>
+                            <div class="accordion__content" id="faq-6" role="definition">
+                                <div class="accordion__content-inner">
+                                    <div class="accordion__content-body">
+                                        <p>
+                                            AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables them to perform tasks like problem-solving, learning, and decision-making.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <details class="accordion__details" name="faq">
+                                <summary class="accordion__summary">
+                                    <h5 class="accordion__title">
+                                        <span role="term" aria-details="faq-7">
+                                            Can I download episodes to listen offline?
+                                        </span>
+                                    </h5>
+                                </summary>
+                            </details>
+                            <div class="accordion__content" id="faq-7" role="definition">
+                                <div class="accordion__content-inner">
+                                    <div class="accordion__content-body">
+                                        <p>
+                                            AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables them to perform tasks like problem-solving, learning, and decision-making.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <details class="accordion__details" name="faq">
+                                <summary class="accordion__summary">
+                                    <h5 class="accordion__title">
+                                        <span role="term" aria-details="faq-8">
+                                            How often do you release new episodes?
+                                        </span>
+                                    </h5>
+                                </summary>
+                            </details>
+                            <div class="accordion__content" id="faq-8" role="definition">
+                                <div class="accordion__content-inner">
+                                    <div class="accordion__content-body">
+                                        <p>
+                                            AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables them to perform tasks like problem-solving, learning, and decision-making.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section" aria-labelledby="plan-title">
+                <div class="tabs-container" data-js-tabs>
+                    <header class="section__header">
+                        <div class="section__header-inner tabs container">
+                            <div class="section__header-info">
+                                <h3 class="section__title" id="plan-title">
+                                    Choose the plan that's right for you
+                                </h3>
+                                <p class="section__subtitle">
+                                    Join StreamVibe and select from our flexible subscription options tailored to suit your viewing preferences. Get ready for non-stop entertainment!
+                                </p>
+                            </div>
+                            <div class="section__header-tabs-buttons tabs-buttons" role="tablist">
+                                <button 
+                                    class="tabs__button is-active" 
+                                    type="button" 
+                                    id="tab-1" 
+                                    role="tab" 
+                                    aria-controls="tabpanel-1" 
+                                    data-js-tabs-button
+                                    aria-selected="true">
+                                    Monthly
+                                </button>
+                                <button 
+                                    class="tabs__button" 
+                                    type="button" 
+                                    id="tab-2" 
+                                    role="tab" 
+                                    aria-controls="tabpanel-2" 
+                                    data-js-tabs-button
+                                    aria-selected="false"
+                                    tabindex="-1">
+                                    Yearly
+                                </button>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="section__body-tabs-content container">
+                        <div class="tabs__content is-active"
+                            id="tabpanel-1"
+                            aria-labelledby="tab-1"
+                            tabindex="0"
+                            data-js-tabs-content>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <article class="plan-card">
+                                        <div class="plan-card__heading">
+                                            <h4 class="plan-card__title">Basic Plan</h4>
+                                            <div class="plan-card__text">
+                                                <p>
+                                                    Enjoy an extensive library of movies and shows, featuring a range of content, including recently released titles.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="plan-card__price">
+                                            <p><span>$9.99</span>/month</p>
+                                        </div>
+                                        <div class="plan-card__buttons">
+                                            <button class="plan-card__btn button--black">
+                                                Start Free Trial
+                                            </button>
+                                            <button class="plan-card__btn button">
+                                                Choose Plan
+                                            </button>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="list__item">
+                                    <article class="plan-card">
+                                        <div class="plan-card__heading">
+                                            <h4 class="plan-card__title">Standard Plan</h4>
+                                            <div class="plan-card__text">
+                                                <p>
+                                                    Access to a wider selection of movies and shows, including most new releases and exclusive content
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="plan-card__price">
+                                            <p><span>$12.99</span>/month</p>
+                                        </div>
+                                        <div class="plan-card__buttons">
+                                            <button class="plan-card__btn button--black">
+                                                Start Free Trial
+                                            </button>
+                                            <button class="plan-card__btn button">
+                                                Choose Plan
+                                            </button>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="list__item">
+                                    <article class="plan-card">
+                                        <div class="plan-card__heading">
+                                            <h4 class="plan-card__title">Premium Plan</h4>
+                                            <div class="plan-card__text">
+                                                <p>
+                                                    Access to a widest selection of movies and shows, including all new releases and Offline Viewing
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="plan-card__price">
+                                            <p><span>$14.99</span>/month</p>
+                                        </div>
+                                        <div class="plan-card__buttons">
+                                            <button class="plan-card__btn button--black">
+                                                Start Free Trial
+                                            </button>
+                                            <button class="plan-card__btn button">
+                                                Choose Plan
+                                            </button>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tabs__content"
+                            id="tabpanel-2"
+                            aria-labelledby="tab-2"
+                            tabindex="0"
+                            data-js-tabs-content>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <article class="plan-card">
+                                        <div class="plan-card__heading">
+                                            <h4 class="plan-card__title">Basic Plan</h4>
+                                            <div class="plan-card__text">
+                                                <p>
+                                                    Enjoy an extensive library of movies and shows, featuring a range of content, including recently released titles.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="plan-card__price">
+                                            <p><span>$100</span>/year</p>
+                                        </div>
+                                        <div class="plan-card__buttons">
+                                            <button class="plan-card__btn button">
+                                                Choose Plan
+                                            </button>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="list__item">
+                                    <article class="plan-card">
+                                        <div class="plan-card__heading">
+                                            <h4 class="plan-card__title">Standard Plan</h4>
+                                            <div class="plan-card__text">
+                                                <p>
+                                                    Access to a wider selection of movies and shows, including most new releases and exclusive content
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="plan-card__price">
+                                            <p><span>$150</span>/year</p>
+                                        </div>
+                                        <div class="plan-card__buttons">
+                                            <button class="plan-card__btn button">
+                                                Choose Plan
+                                            </button>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="list__item">
+                                    <article class="plan-card">
+                                        <div class="plan-card__heading">
+                                            <h4 class="plan-card__title">Premium Plan</h4>
+                                            <div class="plan-card__text">
+                                                <p>
+                                                    Access to a widest selection of movies and shows, including all new releases and Offline Viewing
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="plan-card__price">
+                                            <p><span>$170</span>/year</p>
+                                        </div>
+                                        <div class="plan-card__buttons">
+                                            <button class="plan-card__btn button">
+                                                Choose Plan
+                                            </button>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="banner">
+                <header class="section__header container">
+                    <div class="section__header-inner">
+                        <div class="section__header-info">
+                            <h3 class="section__title">
+                                Start your free trial today!
+                            </h3>
+                            <p class="section__subtitle">
+                                This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.
+                            </p>
+                        </div>
+                        <a href="#" class="section__header-btn button">Start a Free Trail</a>
+                        <img src="./images/banner.jpg" alt="">
+                    </div>
+                </header>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__inner container">
+                <div class="footer__body">
+                    <nav class="footer__menu">
+                        <div class="footer__menu-column">
+                            <a href="#" class="footer__menu-main-link h6">Home</a>
+                            <ul class="footer__menu-list">
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Categories</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Devices</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Pricing</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__menu-column">
+                            <a href="#" class="footer__menu-main-link h6">Movies</a>
+                            <ul class="footer__menu-list">
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Gernes</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Trending</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">New Release</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Popular</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__menu-column">
+                            <a href="#" class="footer__menu-main-link h6">Shows</a>
+                            <ul class="footer__menu-list">
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Gernes</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Trending</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">New Release</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Popular</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__menu-column">
+                            <a href="#" class="footer__menu-main-link h6">Support</a>
+                            <ul class="footer__menu-list">
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__menu-column">
+                            <a href="#" class="footer__menu-main-link h6">Subscription</a>
+                            <ul class="footer__menu-list">
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Plans</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Features</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__menu-column">
+                            <a href="#" class="footer__menu-main-link h6">Connect With Us</a>
+                            <div class="footer__socials socials">
+                                <ul class="socials__list">
+                                    <li class="socials__item">
+                                        <a href="#" class="socials__link" target="_blank" title="Facebook" aria-label="Facebook">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_109_1783)">
+                                                    <path d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4687H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92187 17.3438 4.92187V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4687H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z" fill="white"/>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_109_1783">
+                                                        <rect width="24" height="24" fill="white"/>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="socials__item">
+                                        <a href="#" class="socials__link" target="_blank" title="Twitter" aria-label="Twitter">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.55016 21.75C16.6045 21.75 21.5583 14.2467 21.5583 7.74186C21.5583 7.53092 21.5536 7.3153 21.5442 7.10436C22.5079 6.40746 23.3395 5.54425 24 4.5553C23.1025 4.9546 22.1496 5.21538 21.1739 5.32874C22.2013 4.71291 22.9705 3.74547 23.3391 2.60577C22.3726 3.17856 21.3156 3.58261 20.2134 3.80061C19.4708 3.01156 18.489 2.48912 17.4197 2.31405C16.3504 2.13899 15.2532 2.32105 14.2977 2.8321C13.3423 3.34314 12.5818 4.15471 12.1338 5.14131C11.6859 6.12792 11.5754 7.23462 11.8195 8.2903C9.86249 8.19209 7.94794 7.6837 6.19998 6.7981C4.45203 5.91249 2.90969 4.66944 1.67297 3.14952C1.0444 4.23324 0.852057 5.51565 1.13503 6.73609C1.418 7.95654 2.15506 9.02345 3.19641 9.71999C2.41463 9.69517 1.64998 9.48468 0.965625 9.10592V9.16686C0.964925 10.3041 1.3581 11.4066 2.07831 12.2868C2.79852 13.167 3.80132 13.7706 4.91625 13.995C4.19206 14.1931 3.43198 14.222 2.69484 14.0794C3.00945 15.0574 3.62157 15.9129 4.44577 16.5263C5.26997 17.1398 6.26512 17.4806 7.29234 17.5012C5.54842 18.8711 3.39417 19.6141 1.17656 19.6106C0.783287 19.61 0.390399 19.5859 0 19.5384C2.25286 20.9837 4.87353 21.7514 7.55016 21.75Z" fill="white"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="socials__item">
+                                        <a href="#" class="socials__link" target="_blank" title="LinkedIn" aria-label="LinkedIn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_109_1789)">
+                                                    <path d="M22.2234 0H1.77187C0.792187 0 0 0.773438 0 1.72969V22.2656C0 23.2219 0.792187 24 1.77187 24H22.2234C23.2031 24 24 23.2219 24 22.2703V1.72969C24 0.773438 23.2031 0 22.2234 0ZM7.12031 20.4516H3.55781V8.99531H7.12031V20.4516ZM5.33906 7.43438C4.19531 7.43438 3.27188 6.51094 3.27188 5.37187C3.27188 4.23281 4.19531 3.30937 5.33906 3.30937C6.47813 3.30937 7.40156 4.23281 7.40156 5.37187C7.40156 6.50625 6.47813 7.43438 5.33906 7.43438ZM20.4516 20.4516H16.8937V14.8828C16.8937 13.5562 16.8703 11.8453 15.0422 11.8453C13.1906 11.8453 12.9094 13.2937 12.9094 14.7891V20.4516H9.35625V8.99531H12.7687V10.5609H12.8156C13.2891 9.66094 14.4516 8.70938 16.1813 8.70938C19.7859 8.70938 20.4516 11.0813 20.4516 14.1656V20.4516Z" fill="white"/>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_109_1789">
+                                                        <rect width="24" height="24" fill="white"/>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="footer__extra">
+                    <p class="footer__copyright">© <time datetime="2024">2024</time> FutureTech. All rights reserved.</p>
+                    <div class="footer__extra-menu">
+                        <ul class="footer__extra-menu-list">
+                            <li class="footer__extra-menu-item">
+                                <a href="#" class="footer__extra-menu-link">Terms of Use</a>
+                            </li>
+                            <li class="footer__extra-menu-item">
+                                <a href="#" class="footer__extra-menu-link">Privacy Policy</a>
+                            </li>
+                            <li class="footer__extra-menu-item">
+                                <a href="#" class="footer__extra-menu-link">Cookie Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
