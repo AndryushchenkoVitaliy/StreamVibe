@@ -1,0 +1,45 @@
+@use '../helpers/' as *;
+
+.support {
+    padding-top: rem(200);
+    padding-bottom: rem(100);
+    @include mobile {
+        padding-top: rem(100);
+    }
+    
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        column-gap: rem(80);
+        @include tablet {
+            flex-direction: column;
+            row-gap: rem(50);
+        }
+    }
+
+    &__preview {
+        max-width: rem(533);
+
+        &-info {
+            margin-bottom: rem(50);
+        }
+        &-title {
+            font-weight: 700;
+            line-height: 1.5;
+            margin-bottom: rem(14);
+        }
+        &-desc {
+            font-weight: 400;
+            line-height: 1.5;
+        }
+        &-image {
+            border-radius: rem(12);
+            overflow: hidden;
+        }
+    }
+
+    &__body {
+        width: 100%;
+    }
+}

@@ -1,0 +1,177 @@
+@use '../helpers/' as *;
+
+.section {
+
+    &__header {
+        &-arrows {
+            display: flex;
+            flex-shrink: 0;
+            justify-content: space-between;
+            align-items: center;
+            padding: rem(16);
+            border: var(--border);
+            border-radius: rem(10);
+            background-color: var(--color-black-06);
+            min-width: rem(257);
+            height: rem(88);
+
+            @include laptop {
+                padding: rem(12);
+                height: rem(68);
+            }
+            @include mobile {
+                height: rem(48);
+                justify-content: center;
+                min-width: rem(200);
+            }
+        }
+    }
+}
+
+.swiper {
+    @include mobile {
+        padding-bottom: rem(24);
+    }
+    
+}
+
+.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    top: var(--swiper-scrollbar-top, auto);
+    z-index: 100;
+    height: rem(5);
+    width: rem(80);
+    background: var(--color-black-20);
+    border-radius: rem(20);
+}
+
+.swiper-scrollbar-drag {
+    height: 100%;
+    width: rem(20);
+    position: relative;
+    background: var(--color-accent);
+    border-radius: rem(20);
+    left: 0;
+    top: 0;
+}
+
+.swiper-pagination-bullet {
+    width: rem(16);
+    height: rem(4);
+    display: inline-block;
+    border-radius: rem(10);
+    background: var(--color-black-20);
+    opacity: 1;
+
+    &-active {
+        width: rem(23);
+        background: var(--color-accent);
+    }
+}
+
+.slide {
+
+    &__item {
+        padding: fluid(30, 20);
+        border: var(--border);
+        border-radius: rem(12);
+        background-color: var(--color-black-10);
+        transition: all var(--transition);
+        &--single {
+            padding: fluid(20, 12);
+            border: var(--border);
+            border-radius: rem(12);
+            background-color: var(--color-black-10);
+        }
+        &:has(.slide__image-link:hover) {
+            border-color: var(--color-black-30);
+            background-color: var(--color-black-12);
+        }
+    }
+    &__images {
+        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: rem(5);
+        margin: 0;
+        padding: 0;
+    }
+    &__image {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        border-radius: rem(10);
+        overflow: hidden;
+
+        &-link {
+            display: block;
+        }
+        
+        
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transform: scale(1.04);
+        }
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-item {
+            display: flex;
+            align-items: center;
+            column-gap: rem(4);
+            padding: rem(6) rem(10) rem(6) rem(6);
+            border: var(--border);
+            border-radius: rem(51);
+            background-color: var(--color-black-08);
+            margin-top: rem(20);
+            justify-content: center;
+            & p {
+                font-size: rem(16);
+                font-weight: 500;
+                line-height: 1.5;
+            }
+        }
+    }
+    &__title {
+        display: grid;
+        row-gap: rem(2);
+        font-weight: 600;
+        line-height: 1.5;
+        @include fluid-text(18, 14);
+        color: var(--color-white);
+        &-tag {
+            padding: rem(10);
+            font-weight: 600;
+            font-size: rem(16);
+            height: rem(32);
+            border-radius: rem(5);
+            @include laptop {
+                padding: rem(8);
+                font-size: rem(12);
+                height: rem(25);
+                border-radius: rem(4);
+            }
+        }
+    }
+    
+    
+    
+    &__link {
+        rotate: 180deg;
+        @include hover {
+            svg path {
+                stroke: var(--color-accent);
+            }
+        }
+    }
+}

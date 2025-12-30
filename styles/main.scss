@@ -1,0 +1,20 @@
+@use 'normalize';
+@use 'fonts';
+@use 'variables';
+@use 'utils';
+@use 'globals';
+
+@use 'blocks/components';
+@use 'blocks/desc-list';
+
+@use 'blocks/hero';
+@use 'blocks/movies-page';
+@use 'blocks/devices';
+@use 'blocks/plan';
+@use 'blocks/tabs';
+@use 'blocks/categories';
+@use 'blocks/support';
+@use 'blocks/subscriptions';
+@use 'blocks/table';
+@use 'blocks/movies-shows';
+// @use 'blocks/shows-box';

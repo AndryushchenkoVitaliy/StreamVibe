@@ -1,0 +1,56 @@
+@use '../helpers/' as *;
+
+.plan { 
+    &-card {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: fluid(50, 30);
+        padding: fluid(40, 24);
+        background-color: var(--color-black-10);
+        border: var(--border);
+        border-radius: rem(12);
+        @include laptop {
+            border-radius: rem(10);
+        }
+
+        &__heading {
+            flex-grow: 1;
+            display: grid;
+            row-gap: rem(16);
+        }
+        &__text {
+            max-width: rem(412);
+        }
+        &__price {
+            & span {
+                color: var(--color-white);
+                font-weight: 600;
+                line-height: 0.73;
+                @include fluid-text(40, 24)
+            }
+        }
+        &__buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: fluid(20, 10);
+            @include laptop {
+                flex-wrap: wrap;
+            }
+        }
+    }  
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: fluid(30, 10);
+
+    @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include mobile {
+        grid-template-columns: 1fr;
+    }
+}

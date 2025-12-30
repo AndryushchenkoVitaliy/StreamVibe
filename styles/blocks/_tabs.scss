@@ -1,0 +1,57 @@
+@use '../helpers/' as *;
+
+.tabs {
+
+    &-buttons {
+        flex-shrink: 0;
+        padding: rem(10);
+        border: var(--border);
+        border-radius: rem(10);
+        background-color: var(--color-black-06);
+
+        @include laptop {
+            padding: rem(8);
+            border-radius: rem(8);
+        }
+    }
+    &__button,
+    &__button.is-active {
+        padding: rem(14) rem(24);
+        border-radius: rem(10);
+
+        @include laptop {
+            padding: rem(12) rem(20);
+            border-radius: rem(6);
+        }
+    }
+
+    &__button {
+        border: rem(1) solid transparent;
+        background-color: transparent;
+
+        @include hover {
+            border: var(--border);
+        }
+
+        &.is-active {
+            color: var(--color-white);
+            border: var(--border);
+            background-color: var(--color-black-15);
+        }
+    }
+
+    &__content {
+        display: none;
+
+        &.is-active {
+            display: grid;
+        }
+    }
+    &__content-alt {
+        display: none;
+
+        &.is-active {
+            display: block;
+        }
+    }
+}
